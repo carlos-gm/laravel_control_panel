@@ -16,6 +16,11 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::resource('admin', 'Admin_DashboardController');
+Route::get('/admin', function()
+{
+	return Redirect::to('/admin/main');
+});
+
+Route::resource('admin/main', 'Admin_DashboardController');
 
 Route::resource('admin/users', 'Admin_UsersController');

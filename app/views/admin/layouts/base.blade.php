@@ -9,7 +9,7 @@
     <link href="{{ asset('assets/admin/css/unicorn.css') }}" rel="stylesheet" media="screen">
 
 		<!--[if lt IE 9]>
-		<script type="text/javascript" src="js/respond.min.js"></script>
+		<script src="{{ asset('assets/admin/js/respond.min.js') }}"></script>
 		<![endif]-->
 			
 	</head>	
@@ -112,7 +112,7 @@
 				</div>
 				<div id="breadcrumb">
 					<a href="#" title="Go to Home" class="tip-bottom"><i class="fa fa-home"></i> Home</a>
-					<a href="#" class="current">Dashboard</a>
+					<a href="#" class="current">@lang('admin/panel.inicio')</a>
 				</div>
 				<div class="container-fluid">
 					<div class="row">
@@ -129,7 +129,7 @@
 			</div>
 			<div class="row">
 				<div id="footer" class="col-xs-12">
-					2012 - 2013 &copy; Unicorn Admin. Brought to you by <a href="https://wrapbootstrap.com/user/diablo9983">diablo9983</a>
+					2013 - 2014 &copy; BrigantiuM CMS</a>
 				</div>
 			</div>
 		</div>

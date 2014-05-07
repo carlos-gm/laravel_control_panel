@@ -1,0 +1,15 @@
+En windows 7 
+C:\Windows\System32\drivers\etc
+	fichero: hosts
+		-> 127.0.0.1       laravel.dev
+
+Configuar el fichero C:\xampp\apache\conf\extra
+	-> httpd-vhosts.conf
+
+	y crear el host
+
+<VirtualHost laravel.dev:80>
+    DocumentRoot "E:/laravel_control_panel/public/"
+    ServerName laravel.dev
+    ServerAlias laravel.dev <http://laravel.dev>
+</VirtualHost>
