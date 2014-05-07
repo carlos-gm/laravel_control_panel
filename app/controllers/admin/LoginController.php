@@ -1,6 +1,6 @@
 <?php
 
-class Admin_UsersController extends \BaseController {
+class Admin_LoginController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -9,7 +9,7 @@ class Admin_UsersController extends \BaseController {
 	 */
 	public function index()
 	{
-		//return View::make('admin/dashboard');
+		return View::make('admin/login');
 	}
 
 
@@ -20,7 +20,7 @@ class Admin_UsersController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('admin/users/form');
+		//
 	}
 
 

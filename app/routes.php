@@ -16,11 +16,16 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('/admin', function()
+Route::resource('admin/login', 'Admin_LoginController');
+
+Route::group(array('before' => 'authAdmin'), function()
 {
-	return Redirect::to('/admin/main');
+	Route::get('/admin', function()
+	{
+		return Redirect::to('/admin/main');
+	});
+
+	Route::resource('admin/main', 'Admin_DashboardController');
+
+	Route::resource('admin/users', 'Admin_UsersController');
 });
-
-Route::resource('admin/main', 'Admin_DashboardController');
-
-Route::resource('admin/users', 'Admin_UsersController');
